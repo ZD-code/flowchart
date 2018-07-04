@@ -1,0 +1,76 @@
+/*
+* @Author: Brand
+* @Date:   2018-07-04 14:13:09
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-07-04 15:03:21
+*/
+.myflow-container {
+		text-align: left;
+		font-family: Arial, sans-serif, Helvetica, Tahoma;
+		font-size: 12px;
+		line-height: 1.5;
+		color: black;
+	}
+.myflow-container svg{
+	background-image: url("../images/bg.png");
+}
+	.node {
+		width: 70px;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid #fff;
+	}
+	.node>img{
+		display: inline-block;
+		margin-right:5px;
+		vertical-align: middle;
+		margin-top:-3px;
+	}
+	.mover {
+		border: 1px solid #ddd;
+		background-color: #ddd;
+	}
+
+	.selected {
+		background-color: #ddd;
+	}
+
+	.state {
+		
+	}
+
+	#myflow_props table {
+		
+	}
+
+	#myflow_props th {
+		letter-spacing: 2px;
+		text-align: left;
+		padding: 6px;
+		background: #ddd;
+	}
+
+	#myflow_props td {
+		background: #fff;
+		padding: 6px;
+	}
+
+	#pointer {
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#path {
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#task {
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#state {
+		background-repeat: no-repeat;
+		background-position: center;
+	}

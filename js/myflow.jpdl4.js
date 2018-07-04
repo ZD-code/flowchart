@@ -23,7 +23,7 @@ $.extend(true,myflow.config.tools.states,{
 				type : 'start',
 				name : {text:'<<start>>'},
 				text : {text:'开始'},
-				img : {src : 'start_event_empty-1.png'/*tpa=http://www.17sucai.com/preview/450011/2018-04-10/myflow-min/img/48/start_event_empty.png*/,width : 48, height:48},
+				img : {src : 'images/start_event_empty-1.png',width : 48, height:48},
 				attr : {width:50 ,heigth:50 },
 				props : {
 					text: {name:'text',label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'开始'},
@@ -33,7 +33,7 @@ $.extend(true,myflow.config.tools.states,{
 			end : {showType: 'image',type : 'end',
 				name : {text:'<<end>>'},
 				text : {text:'结束'},
-				img : {src : 'end_event_terminate-1.png'/*tpa=http://www.17sucai.com/preview/450011/2018-04-10/myflow-min/img/48/end_event_terminate.png*/,width : 48, height:48},
+				img : {src : 'images/end_event_terminate-1.png',width : 48, height:48},
 				attr : {width:50 ,heigth:50 },
 				props : {
 					text: {name:'text',label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'结束'},
@@ -43,7 +43,7 @@ $.extend(true,myflow.config.tools.states,{
 			'end-cancel' : {showType: 'image',type : 'end-cancel',
 				name : {text:'<<end-cancel>>'},
 				text : {text:'取消'},
-				img : {src : 'end_event_cancel-1.png'/*tpa=http://www.17sucai.com/preview/450011/2018-04-10/myflow-min/img/48/end_event_cancel.png*/,width : 48, height:48},
+				img : {src : 'images/end_event_cancel-1.png',width : 48, height:48},
 				attr : {width:50 ,heigth:50 },
 				props : {
 					text: {name:'text',label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'取消'},
@@ -53,7 +53,7 @@ $.extend(true,myflow.config.tools.states,{
 			'end-error' : {showType: 'image',type : 'end-error',
 				name : {text:'<<end-error>>'},
 				text : {text:'错误'},
-				img : {src : 'end_event_error-1.png'/*tpa=http://www.17sucai.com/preview/450011/2018-04-10/myflow-min/img/48/end_event_error.png*/,width : 48, height:48},
+				img : {src : 'images/end_event_error-1.png',width : 48, height:48},
 				attr : {width:50 ,heigth:50 },
 				props : {
 					text: {name:'text',label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'错误'},
@@ -63,7 +63,7 @@ $.extend(true,myflow.config.tools.states,{
 			state : {showType: 'text',type : 'state',
 				name : {text:'<<state>>'},
 				text : {text:'状态'},
-				img : {src : 'task_empty-1.png'/*tpa=http://www.17sucai.com/preview/450011/2018-04-10/myflow-min/img/48/task_empty.png*/,width : 48, height:48},
+				img : {src : 'images/task_empty-1.png',width : 48, height:48},
 				props : {
 					text: {name:'text',label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'状态'},
 					temp1: {name:'temp1', label : '文本', value:'', editor: function(){return new myflow.editors.inputEditor();}},
@@ -72,7 +72,7 @@ $.extend(true,myflow.config.tools.states,{
 			fork : {showType: 'image',type : 'fork',
 				name : {text:'<<fork>>'},
 				text : {text:'分支'},
-				img : {src : 'gateway_parallel-1.png',width :48, height:48},
+				img : {src : 'images/gateway_parallel-1.png',width :48, height:48},
 				attr : {width:50 ,heigth:50 },
 				props : {
 					text: {name:'text', label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'分支'},
@@ -82,7 +82,7 @@ $.extend(true,myflow.config.tools.states,{
 			join : {showType: 'image',type : 'join',
 				name : {text:'<<join>>'},
 				text : {text:'合并'},
-				img : {src : 'gateway_parallel-1.png'/*tpa=http://www.17sucai.com/preview/450011/2018-04-10/myflow-min/img/48/gateway_parallel.png*/,width :48, height:48},
+				img : {src : 'images/gateway_parallel-1.png',width :48, height:48},
 				attr : {width:50 ,heigth:50 },
 				props : {
 					text: {name:'text', label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'合并'},
@@ -92,7 +92,7 @@ $.extend(true,myflow.config.tools.states,{
 			task : {showType: 'text',type : 'task',
 				name : {text:'<<task>>'},
 				text : {text:'任务'},
-				img : {src : 'task_empty-1.png',width :48, height:48},
+				img : {src : 'images/task_empty-1.png',width :48, height:48},
 				props : {
 					text: {name:'text', label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'任务'},
 					assignee: {name:'assignee', label: '用户', value:'', editor: function(){return new myflow.editors.inputEditor();}},
