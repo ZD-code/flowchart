@@ -1218,12 +1218,15 @@
     };
  
     myflow.props = function(o, r) {
-        var _this = this, _pdiv = $('#myflow_props').hide().draggable({
+        var _this = this, 
+            _pdiv = $('#myflow_props').hide().draggable({
                     handle : '#myflow_props_handle'
-                }).resizable().css(myflow.config.props.attr).bind('click',
-                function() {
+                }).resizable().css(myflow.config.props.attr).bind('click',function() {
                     return false;
-                }), _tb = _pdiv.find('table'), _r = r, _src;
+                }), 
+             _tb = _pdiv.find('table'), 
+            _r = r,
+            _src;
  
         var showpropsHandler = function(e, props, src) {
             if (_src && _src.getId() == src.getId()) {// 连续点击不刷新
@@ -1238,6 +1241,7 @@
  
             _tb.empty();
             _pdiv.show();
+
             for (var k in props) {
                 _tb.append('<tr><th>' + props[k].label + '</th><td><div id="p'
                         + k + '" class="editor"></div></td></tr>');
@@ -1425,6 +1429,8 @@
  
             // 属性框
             new myflow.props({}, _r);
+        }else{
+            $('#myflow_props').hide();
         }
         // 恢复
         if (o.restore) {

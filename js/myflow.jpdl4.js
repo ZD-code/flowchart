@@ -77,7 +77,7 @@ $.extend(true,myflow.config.tools.states,{
 				props : {
 					text: {name:'text', label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'分支'},
 					temp1: {name:'temp1', label: '文本', value:'', editor: function(){return new myflow.editors.inputEditor();}},
-					temp2: {name:'temp2', label : '选择', value:'', editor: function(){return new myflow.editors.selectEditor('./select.json');}}
+					temp2: {name:'temp2', label : '选择', value:'', editor: function(){return new myflow.editors.selectEditor('select.json');}}
 				}},
 			join : {showType: 'image',type : 'join',
 				name : {text:'<<join>>'},
@@ -87,7 +87,7 @@ $.extend(true,myflow.config.tools.states,{
 				props : {
 					text: {name:'text', label: '显示', value:'', editor: function(){return new myflow.editors.textEditor();}, value:'合并'},
 					temp1: {name:'temp1', label: '文本', value:'', editor: function(){return new myflow.editors.inputEditor();}},
-					temp2: {name:'temp2', label : '选择', value:'', editor: function(){return new myflow.editors.selectEditor('./select.json');}}
+					temp2: {name:'temp2', label : '选择', value:'', editor: function(){return new myflow.editors.selectEditor('select.json');}}
 				}},
 			task : {showType: 'text',type : 'task',
 				name : {text:'<<task>>'},
