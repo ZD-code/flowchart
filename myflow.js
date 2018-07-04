@@ -111,11 +111,6 @@
                 onclick : function(data) {
                     alert(data);
                 }
-            },
-            delete:{
-                onclick:function(){
-                    removeHandler();
-                }
             }
         },
         props : {// 属性编辑器
@@ -1427,10 +1422,6 @@
                         // alert(data);
                     });
 
-            $('#myflow_del').click(function(){
-                alert('del')
-                this.remove();
-            })
  
             // 属性框
             new myflow.props({}, _r);
